@@ -13,6 +13,7 @@
 		0E3696FD1EDBAB0500A7A281 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E3696FC1EDBAB0500A7A281 /* Assets.xcassets */; };
 		0E3697001EDBAB0500A7A281 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E3696FE1EDBAB0500A7A281 /* LaunchScreen.storyboard */; };
 		0E36970A1EDBAB7400A7A281 /* PushButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E3697091EDBAB7400A7A281 /* PushButtonView.swift */; };
+		0E36970C1EDBBA2200A7A281 /* CounterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E36970B1EDBBA2200A7A281 /* CounterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0E3696FF1EDBAB0500A7A281 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E3697011EDBAB0500A7A281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E3697091EDBAB7400A7A281 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
+		0E36970B1EDBBA2200A7A281 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				0E3696FE1EDBAB0500A7A281 /* LaunchScreen.storyboard */,
 				0E3697011EDBAB0500A7A281 /* Info.plist */,
 				0E3697091EDBAB7400A7A281 /* PushButtonView.swift */,
+				0E36970B1EDBBA2200A7A281 /* CounterView.swift */,
 			);
 			path = Flo;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 				0E3696F81EDBAB0500A7A281 /* ViewController.swift in Sources */,
 				0E36970A1EDBAB7400A7A281 /* PushButtonView.swift in Sources */,
 				0E3696F61EDBAB0500A7A281 /* AppDelegate.swift in Sources */,
+				0E36970C1EDBBA2200A7A281 /* CounterView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +310,7 @@
 				0E3697061EDBAB0500A7A281 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
