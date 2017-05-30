@@ -21,33 +21,57 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ds2-Zr-z7h" customClass="CounterView" customModule="Flo" customModuleProvider="target">
-                                <rect key="frame" x="72" y="70" width="230" height="230"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UZt-ov-bha" userLabel="Container View">
+                                <rect key="frame" x="37.5" y="50" width="300" height="300"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdo-cV-1gm">
-                                        <rect key="frame" x="93" y="93" width="44" height="44"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ds2-Zr-z7h" customClass="CounterView" customModule="Flo" customModuleProvider="target">
+                                        <rect key="frame" x="34.5" y="34.5" width="230" height="230"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="8" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdo-cV-1gm">
+                                                <rect key="frame" x="93" y="93" width="44" height="44"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="counter">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
+                                                <color key="value" red="0.3411764705882353" green="0.85098039215686272" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
+                                                <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tSd-Oo-aRd" customClass="GraphView" customModule="Flo" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="25" width="300" height="250"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="startColor">
+                                                <color key="value" red="0.98039215686274506" green="0.9137254901960784" blue="0.87058823529411766" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="endColor">
+                                                <color key="value" red="0.9882352941176471" green="0.30980392156862746" blue="0.031372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="230" id="GuZ-7P-uq1"/>
-                                    <constraint firstAttribute="width" constant="230" id="tGx-ps-g8q"/>
+                                    <constraint firstAttribute="width" constant="300" id="SjX-JL-Zpa"/>
+                                    <constraint firstAttribute="height" constant="300" id="s5R-Fc-9nf"/>
                                 </constraints>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="counter">
-                                        <integer key="value" value="2"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="counterColor">
-                                        <color key="value" red="0.3411764705882353" green="0.85098039215686272" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="outlineColor">
-                                        <color key="value" red="0.13333333333333333" green="0.43137254901960786" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="dKt-c4-E5d" appends="YES" id="EdJ-lc-NyI"/>
+                                </connections>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mAd-Xb-vIZ" customClass="PushButtonView" customModule="Flo" customModuleProvider="target">
                                 <rect key="frame" x="137.5" y="350" width="100" height="100"/>
@@ -86,18 +110,25 @@
                         <constraints>
                             <constraint firstItem="mAd-Xb-vIZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="2b6-Nm-9wd"/>
                             <constraint firstItem="l9V-QT-v1N" firstAttribute="top" secondItem="mAd-Xb-vIZ" secondAttribute="bottom" constant="24" id="6NA-8l-QAO"/>
-                            <constraint firstItem="mAd-Xb-vIZ" firstAttribute="top" secondItem="ds2-Zr-z7h" secondAttribute="bottom" constant="50" id="Rvj-HL-zxw"/>
+                            <constraint firstItem="UZt-ov-bha" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FGO-yA-f8O"/>
                             <constraint firstItem="l9V-QT-v1N" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="p1E-qn-Q77"/>
                             <constraint firstItem="mAd-Xb-vIZ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="66.5" id="qDO-W6-pVb"/>
-                            <constraint firstItem="ds2-Zr-z7h" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="teE-ar-gKD"/>
+                            <constraint firstItem="mAd-Xb-vIZ" firstAttribute="top" secondItem="UZt-ov-bha" secondAttribute="bottom" id="vdc-H2-uPR"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="containerView" destination="UZt-ov-bha" id="nCO-vZ-maZ"/>
                         <outlet property="counterLabel" destination="mdo-cV-1gm" id="KCp-6i-qLQ"/>
                         <outlet property="counterView" destination="ds2-Zr-z7h" id="4KS-es-Cj1"/>
+                        <outlet property="graphView" destination="tSd-Oo-aRd" id="aGA-zU-Wy6"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="dKt-c4-E5d">
+                    <connections>
+                        <action selector="counterViewTap:" destination="BYZ-38-t0r" id="3aR-aU-sYZ"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
         </scene>
     </scenes>
