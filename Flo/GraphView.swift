@@ -109,7 +109,6 @@ class GraphView: UIView {
         let highestYPoint = columnYPoint(maxValue)
         startPoint = CGPoint(x: margin, y: highestYPoint)
         endPoint = CGPoint(x: margin, y: bounds.height)
-        print("rect : \(rect.height), bounds : \(bounds.height)")
         
         context?.drawLinearGradient(gradient, start: startPoint, end: endPoint, options: CGGradientDrawingOptions())
         context?.restoreGState()
