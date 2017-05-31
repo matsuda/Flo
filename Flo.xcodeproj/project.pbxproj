@@ -27,6 +27,7 @@
 		0E3697011EDBAB0500A7A281 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E3697091EDBAB7400A7A281 /* PushButtonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushButtonView.swift; sourceTree = "<group>"; };
 		0E36970B1EDBBA2200A7A281 /* CounterView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CounterView.swift; sourceTree = "<group>"; };
+		0E6B1D061EDE949A001936B7 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		0E78B80F1EDD0780000A3ACF /* GraphView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,6 +45,7 @@
 		0E3696E91EDBAB0500A7A281 = {
 			isa = PBXGroup;
 			children = (
+				0E6B1D061EDE949A001936B7 /* README.md */,
 				0E3696F41EDBAB0500A7A281 /* Flo */,
 				0E3696F31EDBAB0500A7A281 /* Products */,
 			);
